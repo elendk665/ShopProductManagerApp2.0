@@ -33,14 +33,18 @@
             </Grid.ColumnDefinitions>
 
             <Button x:Name="CloseButton" Grid.Row="0" Grid.Column="0" Content="X" Width="30" Height="30" 
-                Margin="0" Padding="0" HorizontalAlignment="Right" VerticalAlignment="Top" Background="Red" 
+                Margin="0" Padding="0" HorizontalAlignment="Right" VerticalAlignment="Top" Background="#FF6D162E" 
                 Foreground="White" FontWeight="Bold" materialDesign:ButtonAssist.CornerRadius="10" Click="CloseButton_Click"/>
             
-            <Image Source="logo.png" Grid.Row="1" Grid.Column="0" Height="150" Margin="0 20 0 40"/>
-            
-            <TextBlock Text="Добро пожаловать!" Grid.Row="2" Grid.Column="0" Margin="0 0 0 5"
-                HorizontalAlignment="Center" FontSize="28" FontWeight="Bold"/>
-            
+            <Image Source="logo.png" Grid.Row="1" Grid.Column="0" Height="150" Margin="0 20 0 40">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="/delivery-6.png"/>
+                </Image.OpacityMask>
+            </Image>
+
+            <TextBlock Grid.Row="2" Grid.Column="0" Margin="0 0 0 5"
+                HorizontalAlignment="Center" FontSize="28" FontWeight="Bold"><Run Text="До"/><Run Language="ru-ru" Text="Брый день"/></TextBlock>
+
             <TextBlock Text="Войдите в аккаунт" Grid.Row="3" Grid.Column="0" Margin="0 0 0 30"
                 HorizontalAlignment="Center" FontSize="24" FontWeight="SemiBold"/>
             
@@ -57,12 +61,12 @@
             <Button x:Name="LoginButton" Grid.Row="6" Margin="20 0 20 15" Height="60" FontWeight="Bold"
                 FontSize="20" Content="ВХОД" Click="LoginButton_Click"
                 materialDesign:ButtonAssist.CornerRadius="10"
-                Style="{StaticResource MaterialDesignRaisedButton}"/>
+                Style="{StaticResource MaterialDesignRaisedButton}" Background="#FF960083"/>
 
             <Button x:Name="OpenRegisterButton" Grid.Row="7" Margin="20 0 20 0" Height="60" FontWeight="SemiBold"
                 FontSize="20" Content="Создайте аккаунт" Click="OpenRegisterButton_Click"
                 materialDesign:ButtonAssist.CornerRadius="10"
-                Style="{StaticResource MaterialDesignFlatButton}"/>
+                Style="{StaticResource MaterialDesignFlatButton}" Background="#FFEFEDED"/>
         </Grid>
     </materialDesign:Card>
 </Window>

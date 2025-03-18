@@ -95,5 +95,10 @@ namespace ShopProductManagerApp
                 _dbContext.SaveChanges();
             }
         }
+
+        private void NameTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -43,7 +43,7 @@
             </Image>
 
             <TextBlock Grid.Row="2" Grid.Column="0" Margin="0 0 0 5"
-                HorizontalAlignment="Center" FontSize="28" FontWeight="Bold"><Run Text="До"/><Run Language="ru-ru" Text="Брый день"/></TextBlock>
+                HorizontalAlignment="Center" FontSize="28" FontWeight="Bold"><Run Text="До"/><Run Language="ru-ru" Text="б"/><Run Text="рый день"/></TextBlock>
 
             <TextBlock Text="Войдите в аккаунт" Grid.Row="3" Grid.Column="0" Margin="0 0 0 30"
                 HorizontalAlignment="Center" FontSize="24" FontWeight="SemiBold"/>

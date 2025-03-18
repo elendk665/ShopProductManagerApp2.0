@@ -36,7 +36,7 @@
                 Margin="0" Padding="0" HorizontalAlignment="Right" VerticalAlignment="Top" Background="#FF6D162E" 
                 Foreground="White" FontWeight="Bold" materialDesign:ButtonAssist.CornerRadius="10" Click="CloseButton_Click"/>
             
-            <Image Source="logo.png" Grid.Row="1" Grid.Column="0" Height="150" Margin="0 20 0 40">
+            <Image Source="/delivery-6.png" Grid.Row="1" Grid.Column="0" Height="150" Margin="0 20 0 40">
                 <Image.OpacityMask>
                     <ImageBrush ImageSource="/delivery-6.png"/>
                 </Image.OpacityMask>
